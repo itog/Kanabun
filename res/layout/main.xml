@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android!",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband for more book information.
+-->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/background"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical">
+	
+	<TextView
+		android:text="@string/main_title"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginBottom="25dip"
+		android:textSize="24.5sp" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_gravity="center">
+		<TextView
+			android:text="@string/timer_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:id="@+id/timer_text"
+			android:textColor="@color/mutable_text"
+			android:background="@color/text_background"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:text="@string/point_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:id="@+id/point_text"
+			android:textColor="@color/mutable_text"
+			android:background="@color/text_background"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_gravity="center">
+		<TextView
+			android:id="@+id/answer_text"
+			android:textColor="@color/mutable_text"
+			android:background="@color/text_background"
+			android:layout_width="250dip"
+			android:layout_height="wrap_content" />
+		<Button
+			android:text="OK"
+			android:id="@+id/ok_button"
+			android:layout_width="50dip"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/board_main"
+		android:orientation="vertical"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:layout_gravity="center">
+<!-- 
+			<LinearLayout
+				android:id="@+id/LinearLayout01"
+				android:background="@color/key_background"
+				android:layout_gravity="center"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<Button
+					android:id="@+id/btn_1_1"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_1" />
+				<Button
+					android:id="@+id/btn_1_2"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_2" />
+				<Button
+					android:id="@+id/btn_1_3"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_3" />
+				<Button
+					android:id="@+id/btn_1_4"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_4" />
+				<Button
+					android:id="@+id/btn_1_5"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_5" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/LinearLayout01"
+				android:background="@color/key_background"
+				android:layout_gravity="center"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<Button
+					android:id="@+id/btn_1_1"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_1" />
+				<Button
+					android:id="@+id/btn_1_2"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_2" />
+				<Button
+					android:id="@+id/btn_1_3"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_3" />
+				<Button
+					android:id="@+id/btn_1_4"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_4" />
+				<Button
+					android:id="@+id/btn_1_5"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_5" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/LinearLayout01"
+				android:background="@color/key_background"
+				android:layout_gravity="center"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<Button
+					android:id="@+id/btn_1_1"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_1" />
+				<Button
+					android:id="@+id/btn_1_2"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_2" />
+				<Button
+					android:id="@+id/btn_1_3"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_3" />
+				<Button
+					android:id="@+id/btn_1_4"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_4" />
+				<Button
+					android:id="@+id/btn_1_5"
+					android:background="@drawable/button"
+					android:layout_width="60dip"
+					android:layout_height="60dip"
+					android:text="@string/label_1_5" />
+			</LinearLayout>
+ -->
+	</LinearLayout>
+</LinearLayout>

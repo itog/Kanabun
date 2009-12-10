@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_title">かなぶん</string>
+    <string name="app_name">Kanabun</string>
+
+
+
+
+<color name="background">#ff20c020</color>
+
+
+<color name="answer_text">#ff000000</color>
+<string name="timer_label">残り時間</string>
+<string name="point_label">得点</string>
+<color name="text_background">#ffffffff</color>
+<color name="mutable_text">#ff000000</color>
+
+</resources>
