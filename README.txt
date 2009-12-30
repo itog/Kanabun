@@ -11,34 +11,26 @@
 かなぶんについては以下を参照して下さい。
 http://kanabun.champierre.com/
 
-・辞書について
-「かなぶん」で使っている辞書についてはこちらをご参照下さい。
-http://kanabun.champierre.com/dictionary
 
+■ライセンス
+・辞書
+かなぶんで使われている辞書は、NAIST Japanese Dictionary の「名詞-一般」に
+分類される単語をベースに辞書を作成しています。
 
+辞書のライセンスは下記でご確認下さい。
+http://sourceforge.jp/projects/naist-jdic/docs/License.txt/ja/1/License.txt.txt
 
-■制限
-データベースファイルは含まれていません。
-下記手順により、Kanabunから辞書を参照できるようにして下さい。
+・画像、音声
 
-・データベースの作成
-下記のスキーマ、文字コードはUTF-8でテーブルを
-作成します。
+効果音は下記サイトで公開されているものを利用させていただいています。
 
-CREATE TABLE "dictionary" (
-  "id" INTEGER PRIMARY KEY  NOT NULL ,
-  "reading" TEXT NOT NULL ,
-  "similarSoundingWords" TEXT NOT NULL );
+ザ・マッチメイカァズ2nd 【フリー効果音素材】
+http://osabisi.sakura.ne.jp/m2/
 
+その他の画像、音声は http://champierre.com の著作物です。
 
-・インストール
-アプリをインストール後、
-
-/data/dat/info.itog_lab.kanabun/databases
-以下に、
-kanabun.sqlite
-というファイル名で置いて下さい。
-
+・ソースコード
+特にライセンスは規定しませんが、コードの一部の流用等はご自由に。
 
 ----------------------------------------
 
