@@ -1,6 +1,0 @@
-<resources><string name="title">かなぶん</string>
-<string name="start_msg">ゲームを開始するにはスタートボタンを押してください</string>
-<string name="start_btn">スタート</string>
-
-<string name="exit_btn">終了する</string>
-</resources>
