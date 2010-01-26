@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="320dip"
+	android:layout_height="480dip" android:orientation="vertical">
+	<TextView android:id="@+id/point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="30sp" android:layout_gravity="center_horizontal" />
+	<TextView android:text="@string/after_point" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20sp" android:layout_gravity="center_horizontal"/>
+	<TextView android:text="\n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp"/>
+	<TextView android:text="@string/answered_word_label" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="20sp" />
+		<ListView android:id="@+id/result_list"
+			android:layout_width="fill_parent"
+			android:layout_height="200dip"
+			android:textSize="20sp" android:scrollbars="vertical"/>
+	<Button android:text="@string/restart_btn" android:id="@+id/dialog_ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal"/>
+</LinearLayout>

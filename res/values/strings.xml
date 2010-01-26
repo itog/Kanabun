@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <string name="app_name">かなぶん</string>
-
+    <string name="app_name">Kanabun</string>
 
 
 
 <color name="background">#ff20c020</color>
 
 
-<color name="answer_text">#ff000000</color><string name="app_description">ひらがなげーむ</string><string name="pregame_msg">わたしにタッチすると\nゲームがはじまるよ</string>
-<string name="timer_label">のこり</string>
-<string name="point_label">とくてん</string>
+<color name="answer_text">#ff000000</color><string name="app_description">Japanese Character Learning game</string><string name="pregame_msg">Touch me to start the game.</string>
+<string name="timer_label">time left</string>
+<string name="point_label">points</string>
 <color name="text_background">#ffffffff</color>
 <color name="normal_text">#ff000000</color>
 
-<string name="ok_label">できた！</string>
-<string name="duplicate">そのことばは\nもうこたえたよ</string>
-<string name="answer_ng">そのことば\nしらないなぁ</string>
-<string name="start_label">すた～と</string>
+<string name="ok_label">OK！</string>
+<string name="duplicate">You answered it already.</string>
+<string name="answer_ng">I don't know the word..</string>
+<string name="start_label">Start</string>
 
-<string name="rule_label">あそびかた</string>
+<string name="rule_label">How to play</string>
 
-<string name="start_msg">すた～と！\nたくさんことばをみつけてね</string>
-<string name="rule_title">かなぶんのあそびかた</string><string name="rule_msg">・もじボタンをおして、しっていることばをつくってね\n\n・もじは２こから１０こまででつくってね\n\n・できた!ボタンをおすと、かなぶんがとくてんをつけてくれるよ\n\n・もじのかずがおおいと、とくてんがたかいよ</string>
-<string name="title">かなぶん</string>
-<string name="restart_btn">うん</string>
+<string name="start_msg">Start！\nTry to find as many words as you can.</string>
+<string name="rule_title">How to play</string><string name="rule_msg">-Make a Japanese word by 'Kana' characters from the keypad.\n\n-Press 'OK' button when you complete a word.\n\n-The longer the word is, the more points you will get.</string>
+<string name="title">Kanabun for Android</string>
+<string name="result">Result</string>
+<string name="restart_btn"> OK </string>
 
-<string name="after_point">てんでした</string>
+<string name="after_point"> points</string>
+<string name="answered_word_label">The words you found</string>
 
+<string name="about_msg">Produced by itog\n\nMusic by Kenji Oh\nhttp://kenjioh.com\n\nDictionary by NAIST-JDIC\nhttp://naist-jdic.sourceforge.jp/\n\niPhone and Web version is available on\nhttp://kanabun.champierre.com/</string>
+<string name="setting_label">Setting...</string>
+<string name="about_label">About...</string>
+<string name="setting_title">Setting</string>
+<string name="bgm_label">BGM ON</string>
+<string name="se_label">Sound Effect ON</string>
+<string name="about_title">About Kanabun</string>
+<string name="result_title">Result</string>
 </resources>

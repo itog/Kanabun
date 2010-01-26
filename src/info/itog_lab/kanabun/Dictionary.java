@@ -10,6 +10,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Arrays;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -24,16 +25,21 @@ import android.util.Log;
  * @author itog
  * 
  *         Database Schema Table: dictionary |id|reading|similarSoundingWords|
+ *         Database Schema Table: dictionary |id|reading|description_j|description_e|
  * 
  */
 public class Dictionary {
+	public static final int COLUMN_NUM_ID = 0;
+	public static final int COLUMN_NUM_READING = 1;
+	public static final int COLUMN_NUM_DESC_J = 2;
+	public static final int COLUMN_NUM_DESC_E = 3;
+
 	final String TAG = "Kanabun";
-	final String DB_NAME = "kanabun.sqlite";
-	final String ZIP_NAME = "kanabun.zip";
-	//final String DB_NAME = "kanabun_s.sqlite";	
+	final String DB_NAME = "kanabun_m.sqlite";
+	final String ZIP_NAME = "kanabun_m.zip";
 	final String TABLE_NAME = "dictionary";
 	final String COLUMN_KANA = "reading";
-	final String COLUMN_ID = "id";
+	final String COLUMN_ID = "_id";
 	final int DEFAULT_BUFFER_SIZE = 1024;
 
 	final int FILE_DIVIDED_NUM = 3;
@@ -45,6 +51,15 @@ public class Dictionary {
 	Dictionary(Context c) {
 		context = c;
 	}
+	
+//	public static int getDescriptionIdCurrentLocale() {
+//		int ret = COLUMN_NUM_DESC_E;
+//		String locale = context.getResources().getConfiguration().locale.getDisplayName();
+//		if (locale == "ja") {
+//			ret = COLUMN_NUM_DESC_J;
+//		}
+//		return ret;
+//	}
 	
 	public void init() {
 		File path = new File("/data/data/" + context.getPackageName() + "/databases/" + DB_NAME);
@@ -82,6 +97,19 @@ public class Dictionary {
 		return c;
 	}
 
+	public Cursor getResultByIds(Integer[] ids) {
+		Cursor c = null;
+		String tmp = Arrays.toString(ids); // [1,2,3]
+		tmp = tmp.replace("[", "(");
+		tmp = tmp.replace("]", ")");
+		try {
+			c = db.query(TABLE_NAME, null, COLUMN_ID + " in " + tmp,
+					null, null, null, null, null);
+		} catch (Exception e) {
+			Log.e(TAG, e.getMessage());
+		}
+		return c;
+	}
 	public void close() {
 		if (db != null) {
 			db.close();

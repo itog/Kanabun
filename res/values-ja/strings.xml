@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">かなぶん</string>
+<color name="background">#ff20c020</color>
+
+
+<color name="answer_text">#ff000000</color><string name="app_description">ひらがなげーむ</string><string name="pregame_msg">わたしにタッチすると\nゲームがはじまるよ</string>
+<string name="timer_label">のこり</string>
+<string name="point_label">とくてん</string>
+<color name="text_background">#ffffffff</color>
+<color name="normal_text">#ff000000</color>
+
+<string name="ok_label">できた！</string>
+<string name="duplicate">そのことばは\nもうこたえたよ</string>
+<string name="answer_ng">そのことば\nしらないなぁ</string>
+<string name="start_label">すた～と</string>
+
+<string name="rule_label">あそびかた</string>
+
+<string name="start_msg">すた～と！\nたくさんことばをみつけてね</string>
+<string name="rule_title">かなぶんのあそびかた</string><string name="rule_msg">・もじボタンをおして、しっていることばをつくってね\n\n・もじは２こから１０こまででつくってね\n\n・できた!ボタンをおすと、かなぶんがとくてんをつけてくれるよ\n\n・もじのかずがおおいと、とくてんがたかいよ</string>
+<string name="title">かなぶん for Android</string>
+<string name="result">けっか</string>
+<string name="restart_btn">　うん　</string>
+
+<string name="after_point">てんでした</string>
+<string name="answered_word_label">こたえたことば</string>
+
+<string name="setting_label">せってい</string>
+<string name="about_label">じょうほう</string>
+<string name="about_title">かなぶんについて</string>
+<string name="result_title">けっか</string>
+</resources>
