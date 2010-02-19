@@ -53,9 +53,7 @@ http://osabisi.sakura.ne.jp/m2/
 その他の画像、音声は http://champierre.com の著作物です。
 
 -Source code / ソースコード
-Not decided yet. Please ask me if you want to reuse source code.
-
-特にライセンスは規定しませんが、コードの一部の流用等はご自由に。
+Apache License 2.0
 
 ----------------------------------------
 
